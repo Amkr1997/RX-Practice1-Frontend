@@ -10,7 +10,7 @@ const BooksView = () => {
 
   useEffect(() => {
     dispatch(fetchAsyncBooks());
-  }, [books]);
+  }, []);
 
   return (
     <>

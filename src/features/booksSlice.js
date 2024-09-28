@@ -122,7 +122,7 @@ const booksSlice = createSlice({
 
     builder.addCase(deleteBookAsync.fulfilled, (state, action) => {
       state.status = "success";
-      state.books = state.books.books.filter(
+      state.books.books = state.books.books.filter(
         (book) => book._id !== action.payload.book._id
       );
     });
